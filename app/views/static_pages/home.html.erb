@@ -1,2 +1,3 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<% provide(:title, t("title.home")) %>
+<h1><%= t "sampleapp" %></h1>
+<p> This is the home page for the <%= link_to t("href.rails"), t("url.rails") %> sample application. </p>
