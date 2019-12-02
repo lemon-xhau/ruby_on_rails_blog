@@ -1,3 +1,7 @@
-<% provide(:title, t("title.home")) %>
-<h1><%= t "sampleapp" %></h1>
-<p> This is the home page for the <%= link_to t("href.rails"), t("url.rails") %> sample application. </p>
+<% provide(:title, t(".home")) %>
+<h1><%= t ".welcome" %></h1>
+<p>
+  <%= t ".page" %>
+  <%= link_to t("rubyonrails"), t("url.rails_url") %>
+  <%= t ".sample" %>
+</p>

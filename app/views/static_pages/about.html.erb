@@ -1,8 +1,12 @@
-<% provide(:title, t("title.about")) %>
-<h1><%= t "title.about" %></h1>
-<p>The <%= link_to t("href.rails"), t("url.rails") %> is a
-  <%= link_to t("href.book_rails"), t("url.book_rails") %> and
-  <%= link_to t("href.screencast"), t("url.screencast") %>
-  to teach web development with <%= link_to t("href.rails"), t("url.rails") %>.
-  This is the sample application for the tutorial.
+<% provide(:title, t(".about")) %>
+<h1><%= t ".about" %></h1>
+<p>
+  <%= t "word.the" %>
+  <%= link_to t "url.rails_url" do %>
+    <em><%= t "rubyonrails" %></em>
+  <% end %>
+  <%= t "word.isa" %> <%= link_to t("word.book"), t("url.book_rails_url") %>
+  <%= t "word.and" %> <%= link_to t(".cast"), t("url.screencast_url") %>
+  <%= t ".teach" %> <%= link_to t("rob"), t("url.rubyonrails_url") %>.
+  <%= t ".sample" %>
 </p>

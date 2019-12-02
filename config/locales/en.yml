@@ -1,18 +1,33 @@
 en:
-  sampleapp: Sample App
-  rails: Ruby on Rails Tutorial Sample App
-  title:
-    home: Home
-    help: Help
-    contact: Contact
-    about: About
-  href:
-    rails: Ruby on Rails Tutorial
-    book_rails: book
-    screencast: screencast series
+  base_title: "Ruby on Rails Tutorial Sample App"
+  rubyonrails: "Ruby on Rails Tutorial"
+  rob: "Ruby on Rails"
+  static_pages:
+    about:
+      about: "About"
+      cast: "screencast series"
+      sample: "This is the sample application for the tutorial."
+      teach: "to teach web development with"
+    help:
+      help: "Help"
+      get: "Get help on the Ruby on Rails Tutorial at the"
+      page: "Rails Tutorial help page"
+      sample: "To get help on this sample app, see the"
+    home :
+      home: "Home"
+      page: "This is the home page for the"
+      sample: "sample application."
+      welcome: "Welcome to the Sample App"
+    contact:
+      contact: "Contact"
+  word:
+    the: "The"
+    isa: "is a"
+    by: "by"
+    book: "book"
   url:
-    rails: https://www.railstutorial.org/
-    book_rails: https://www.railstutorial.org/book 
-    screencast: http://screencasts.railstutorial.org/
-  
-    
+    rails_url: "https://www.railstutorial.org/"
+    rubyonrails_url: "http://rubyonrails.org/"
+    book_rails_url: "https://www.railstutorial.org/book"
+    screencast_url: "http://screencasts.railstutorial.org/"
+    rails_help_url: "http://www.railstutorial.org/help"

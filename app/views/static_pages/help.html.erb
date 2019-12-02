@@ -1,2 +1,11 @@
-<% provide(:title, t("title.help")) %>
-<h1><%= t "title.help" %></h1>
+<% provide(:title, t(".help")) %>
+<h1><%= t ".help" %></h1>
+<p>
+  <%= t ".get" %>
+  <%= link_to t(".page"), t("url.rails_help_url") %>.
+  <%= t ".sample" %>
+  <%= link_to t "url.book_rails_url" do %>
+    <em><%= t "rubyonrails" %></em>.
+  <% end %>
+</p>
+
