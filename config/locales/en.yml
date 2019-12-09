@@ -2,6 +2,21 @@ en:
   base_title: "Ruby on Rails Tutorial Sample App"
   rubyonrails: "Ruby on Rails Tutorial"
   rob: "Ruby on Rails"
+  footer:
+    book_author: "Micheal Hartl"
+    about: "About"
+    new: "News"
+  header:
+    id: "logo"
+    app_name: "Sample App"
+    account: "Account"
+    help: "Help"
+    home: "Home"
+    login: "Log in"
+    logout: "Log out"
+    profile: "Profile"
+    settings: "Settings"
+    users: "Users" 
   static_pages:
     about:
       about: "About"
@@ -15,19 +30,28 @@ en:
       sample: "To get help on this sample app, see the"
     home :
       home: "Home"
+      signup: "Sign up now!"
       page: "This is the home page for the"
       sample: "sample application."
       welcome: "Welcome to the Sample App"
     contact:
       contact: "Contact"
+      sample: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      page: "Contact page"
+  new:
+    signup: "Sign Up"
+    page: "This will be a signup page for new users."
   word:
     the: "The"
     isa: "is a"
     by: "by"
     book: "book"
   url:
+    rails_new_url: "http://news.railstutorial.org/"
     rails_url: "https://www.railstutorial.org/"
     rubyonrails_url: "http://rubyonrails.org/"
     book_rails_url: "https://www.railstutorial.org/book"
     screencast_url: "http://screencasts.railstutorial.org/"
     rails_help_url: "http://www.railstutorial.org/help"
+    book_author_url: "http://www.michaelhartl.com/"
+    contact_url: "http://www.railstutorial.org/contact"
