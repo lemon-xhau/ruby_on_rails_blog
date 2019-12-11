@@ -17,6 +17,17 @@ en:
     profile: "Profile"
     settings: "Settings"
     users: "Users"
+  sessions:
+    new:
+      email: "Email"
+      login: "Log in"
+      logout_first: "Please log out current account first"
+      non_account: "New user ?"
+      password: "Password"
+      signup: "Sign up now!"
+    create:
+      welcome: "Welcome back"
+      invalid: "Invalid email/password combination"
   static_pages:
     about:
       about: "About"
