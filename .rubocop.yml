@@ -231,6 +231,9 @@ Layout/EmptyLinesAroundModuleBody:
   SupportedStyles:
     - no_empty_lines
 
+Layout/EndOfLine:
+  EnforcedStyle: lf
+
 Naming/FileName:
   Exclude:
     - '**/Rakefile'

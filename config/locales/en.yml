@@ -16,7 +16,7 @@ en:
     logout: "Log out"
     profile: "Profile"
     settings: "Settings"
-    users: "Users" 
+    users: "Users"
   static_pages:
     about:
       about: "About"
@@ -38,9 +38,21 @@ en:
       contact: "Contact"
       sample: "Contact the Ruby on Rails Tutorial about the sample app at the"
       page: "Contact page"
-  new:
-    signup: "Sign Up"
-    page: "This will be a signup page for new users."
+  users:
+    new:
+      signup: "Sign up"
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      confirm: "Confirmation"
+      create: "Create my account"
+    create:
+      welcome: "Welcome to Sample App!"
+      error: "Your information is invalid!"
+  shared:
+    error_messages:
+      error: "error"
+      form_contain: "The form contains"
   word:
     the: "The"
     isa: "is a"
