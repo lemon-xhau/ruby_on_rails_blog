@@ -58,9 +58,27 @@ en:
       password: "Password"
       confirm: "Confirmation"
       create: "Create my account"
+    index:
+      all_users: "All users"
+      delete: "Delete"
+      sure: "Are you sure?"
     create:
       welcome: "Welcome to Sample App!"
       error: "Your information is invalid!"
+    edit:
+      change: "Change"
+      confirm: "Confirmation"
+      correct: "You can't update information of other account"
+      edit: "Edit user"
+      email: "Email"
+      login_first: "Please login before update your information"
+      password: "Password"
+      name: "Name"
+      save: "Save changes"
+      update: "Update your profile"
+    update:
+      update: "Profile updated"
+      error: "Profile not updated"
   shared:
     error_messages:
       error: "error"
@@ -79,3 +97,4 @@ en:
     rails_help_url: "http://www.railstutorial.org/help"
     book_author_url: "http://www.michaelhartl.com/"
     contact_url: "http://www.railstutorial.org/contact"
+    gravatar_change: "http://gravatar.com/emails"
