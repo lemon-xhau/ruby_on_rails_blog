@@ -174,3 +174,20 @@ aside {
     color: $state-danger-text;
   }
 }
+
+.checkbox {
+  margin: -10px 0 10px;
+  input[type=checkbox] {
+    margin-left: 0px;
+  }
+  span {
+    font-weight: bold;
+    line-height: 25px;
+    margin-left: 25px;
+    vertical-align: middle;
+  }
+}
+
+.remember {
+  width: auto;
+}
