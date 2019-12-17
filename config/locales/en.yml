@@ -79,6 +79,9 @@ en:
     update:
       update: "Profile updated"
       error: "Profile not updated"
+    destroy:
+      delete_done: "Delete user done"
+      delete_failed: "Failed. May be this user is admin. Delete is forbidden"
   shared:
     error_messages:
       error: "error"

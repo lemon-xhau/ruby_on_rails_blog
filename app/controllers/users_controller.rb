@@ -1,10 +1,10 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, only: [:edit, :update]
-  before_action :correct_user,   only: [:edit, :update]
+  before_action :logged_in_user, only: [:index, :edit, :update, :destroy]
+  before_action :correct_user, only: [:edit, :update]
+  before_action :admin_user, only: :destroy
 
   def index
-    @users = User.select(:id, :name, :email, :is_admin).order(:name)
-            .page(params[:page]).per Settings.user.index.per_page
+     @users = User.paginate(page: params[:page])
   end
 
   def new
@@ -41,6 +41,18 @@ class UsersController < ApplicationController
     end
   end
 
+  def destroy
+    if @user.destroy
+      flash[:success] = t ".delete_done"
+      redirect_to users_url
+    else
+      flash[:danger] = t ".delete_failed"
+      redirect_back fallback_location: root_path
+    end
+  end
+
+  end
+
   private
 
   def user_params
@@ -60,4 +72,8 @@ class UsersController < ApplicationController
       @user = User.find(params[:id])
       redirect_to(root_url) unless current_user?(@user)
     end
+
+  def admin_user
+    redirect_to root_url unless current_user.is_admin?
+  end
 end
