@@ -20,6 +20,9 @@ db/test.*
 !/log/.keep
 !/tmp/.keep
 
+# Ignore uploaded test images.
+/public/uploads
+
 # Ignore uploaded files in development.
 /storage/*
 !/storage/.keep

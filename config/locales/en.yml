@@ -46,6 +46,7 @@ en:
       signup: "Sign up now!"
       page: "This is the home page for the"
       sample: "sample application."
+      mcfeed: "Micropost Feed"
       welcome: "Welcome to the Sample App"
     contact:
       contact: "Contact"
@@ -59,6 +60,8 @@ en:
       password: "Password"
       confirm: "Confirmation"
       create: "Create my account"
+    show:
+      mposts: "Microposts"
     index:
       all_users: "All users"
       delete: "Delete"
@@ -128,6 +131,13 @@ en:
     isa: "is a"
     by: "by"
     book: "book"
+  microposts:
+    create:
+      create: "Micropost created!"
+      not_create: "Micropost not created!"
+    destroy:
+      delete: "Micropost deleted!"
+      not_delete: "Micropost not deleted!"
   url:
     rails_new_url: "http://news.railstutorial.org/"
     rails_url: "https://www.railstutorial.org/"
