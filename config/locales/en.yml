@@ -86,10 +86,24 @@ en:
     destroy:
       delete_done: "Delete user done"
       delete_failed: "Failed. May be this user is admin. Delete is forbidden"
+    followers:
+      title: "Followers"
+    following:
+      title: "Following"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
   shared:
     error_messages:
       error: "error"
       form_contain: "The form contains"
+    stats:
+      followers: "followers"
+      following: "following"
+    user_info:
+      micropost: "micropost"
+      view_profile: "view my profile"
   user_mailer:
     account_activation:
       activation: "Account activation"
@@ -131,12 +145,20 @@ en:
     isa: "is a"
     by: "by"
     book: "book"
+  application:
+    flash:
+      not_logged_in: "You haven't logged in yet"
   microposts:
+    micropost:
+      ago: "ago."
+      delete: "delete"
+      posted: "Posted"
+      sure: "You sure?"
     create:
-      create: "Micropost created!"
+      created: "Micropost created!"
       not_create: "Micropost not created!"
     destroy:
-      delete: "Micropost deleted!"
+      deleted: "Micropost deleted!"
       not_delete: "Micropost not deleted!"
   url:
     rails_new_url: "http://news.railstutorial.org/"
