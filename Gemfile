@@ -2,19 +2,24 @@ source "https://rubygems.org"
 git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
 gem "bcrypt", "3.1.11"
-gem "bootsnap", "1.4.4", require: false
 gem "bootstrap-sass", "3.3.7"
 gem "bootstrap-will_paginate", "1.0.0"
 gem "carrierwave", "1.2.2"
+gem "config"
+gem "coffee-rails", "5.0.0"
 gem "faker", "1.7.3"
+gem "figaro"
 gem "jbuilder", "2.9.1"
+gem "jquery-rails", "4.3.1"
 gem "mini_magick", "4.7.0"
+gem "uglifier", "3.2.0"
 gem "puma", "3.12.1"
 gem "rails", "6.0.1"
 gem "sass-rails", "5.1.0"
 gem "turbolinks", "5.2.0"
+gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "webpacker", "4.0.7"
-gem "will_paginate", "3.1.6"
+gem "will_paginate", "3.1.7"
 
 group :development, :test do
   gem "rubocop", "~> 0.74.0", require: false
@@ -48,6 +53,3 @@ group :production do
   gem "pg", "1.1.4"
   gem "fog", "1.42"
 end
-
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]

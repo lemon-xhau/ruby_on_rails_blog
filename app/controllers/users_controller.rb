@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
 
   def index
-    @users = User.where(activated: true).paginate(page: params[:page])
+    @users = User.paginate(page: params[:page])
   end
 
   def new
@@ -13,7 +13,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    @micropost = @user.microposts.paginate(page: params[:page])
+    @microposts = @user.microposts.paginate(page: params[:page])
   end
 
   def create
@@ -33,7 +33,8 @@ class UsersController < ApplicationController
   end
 
   def update
-    if @user.update_attributes user_params
+    @user = User.find(params[:id])
+    if @user.update user_params
       flash[:success] = t ".update"
       redirect_to @user
     else
@@ -43,15 +44,26 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    if @user.destroy
+    if @user.find(params[:id]).destroy
       flash[:success] = t ".delete_done"
       redirect_to users_url
     else
       flash[:danger] = t ".delete_failed"
-      redirect_back fallback_location: root_path
     end
   end
 
+  def following
+    @title = t ".title"
+    @user = User.find(params[:id])
+    @users = @user.following.paginate(page: params[:page])
+    render "show_follow"
+  end
+
+  def followers
+    @title = t ".title"
+    @user = User.find(params[:id])
+    @users = @user.followers.paginate(page: params[:page])
+    render "show_follow"
   end
 
   private
@@ -61,12 +73,12 @@ class UsersController < ApplicationController
                                  :password_confirmation)
   end
 
-    def correct_user
+  def correct_user
       @user = User.find(params[:id])
       redirect_to(root_url) unless current_user?(@user)
-    end
+  end
 
   def admin_user
-    redirect_to root_url unless current_user.is_admin?
+    redirect_to root_url unless current_user.admin?
   end
 end

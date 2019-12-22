@@ -6,17 +6,18 @@ en:
     book_author: "Micheal Hartl"
     about: "About"
     new: "News"
-  header:
-    id: "logo"
-    app_name: "Sample App"
-    account: "Account"
-    help: "Help"
-    home: "Home"
-    login: "Log in"
-    logout: "Log out"
-    profile: "Profile"
-    settings: "Settings"
-    users: "Users"
+  layout:
+    header:
+      id: "logo"
+      app_name: "Sample App"
+      account: "Account"
+      help: "Help"
+      home: "Home"
+      login: "Log in"
+      logout: "Log out"
+      profile: "Profile"
+      settings: "Settings"
+      users: "Users"
   sessions:
     new:
       email: "Email"
@@ -25,6 +26,7 @@ en:
       logout_first: "Please log out current account first"
       non_account: "New user ?"
       password: "Password"
+      forgot_password: "(Forgot password)"
       signup: "Sign up now!"
     create:
       welcome: "Welcome back"
