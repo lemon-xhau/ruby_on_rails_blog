@@ -14,19 +14,19 @@ class PasswordResetsController < ApplicationController
       flash.now[:danger] = t ".email_not_found"
       render :new
     end
+  end
 
   def update
     if params[:user][:password].empty?
       @user.errors.add :password, t(".empty")
       render :edit
-    elsif @user.update_attributes user_params
+    elsif @user.update user_params
       log_in @user
-      @user.update_attributes reset_digest: nil
       flash[:success] = t ".has_reset"
       redirect_to @user
     else
       flash[:danger] = t ".hasnt_reset"
-      render :new
+      render :edit
     end
   end
 
@@ -36,9 +36,8 @@ class PasswordResetsController < ApplicationController
     params.require(:user).permit :password, :password_confirmation
   end
 
-  def load_user
+  def get_user
     @user = User.find_by email: params[:email]
-    valid_info @user
   end
 
   def valid_user
