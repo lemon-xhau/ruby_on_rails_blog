@@ -4,10 +4,11 @@ development:
   gmail_password: "anhsang123"
   host: "localhost:3000"
   protocol: "http"
+
 production:
   address: "smtp.gmail.com"
   domain: "heroku.com"
   gmail_username: "xuanhautp2014@gmail.com"
   gmail_password: "anhsang123"
-  host: "https://morning-retreat-43272.herokuapp.com/"
+  host: "morning-retreat-43272.herokuapp.com"
   protocol: "https"

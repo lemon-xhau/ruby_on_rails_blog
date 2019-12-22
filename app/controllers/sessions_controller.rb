@@ -8,13 +8,13 @@ class SessionsController < ApplicationController
         flash[:success] = t ".welcome"
         log_in user
         params[:session][:remember_me] == "1" ? remember(user) : forget(user)
-        redirect_to user
+        redirect_back_or user
       else
         flash[:warning] = t ".not_activate"
         redirect_to root_url
       end
     else
-      flash.now[:danger] = t ".invalid_combine"
+      flash.now[:danger] = t ".invalid_combination"
       render :new
     end
   end

@@ -16,7 +16,7 @@ Rails.application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
+  config.assets.compile = true
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.action_controller.asset_host = 'http://assets.example.com'
@@ -26,7 +26,7 @@ Rails.application.configure do
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for NGINX
 
   # Store uploaded files on the local file system (see config/storage.yml for options).
-  config.active_storage.service = :local
+  #config.active_storage.service = :local
 
   # Mount Action Cable outside main process or domain.
   # config.action_cable.mount_path = nil
@@ -76,6 +76,7 @@ Rails.application.configure do
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
 
+  config.active_record.dump_schema_after_migration = false
   # Do not dump schema after migrations.
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.default_url_options = {host: ENV["host"], protocol: ENV["protocol"]}
@@ -86,7 +87,7 @@ Rails.application.configure do
     :user_name => ENV["gmail_username"],
     :password => ENV["gmail_password"],
     :authentication => "plain",
-    :domain => ENV["domain"]
+    :domain => ENV["domain"],
     :enable_starttls_auto => true
   }
 end
