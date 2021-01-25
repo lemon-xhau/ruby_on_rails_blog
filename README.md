@@ -1,4 +1,4 @@
-Create Blog with Ruby On Rails. - 
+Create Blog with Ruby On Rails. 
 
 To get started with the app:
 
